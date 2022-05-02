@@ -885,7 +885,7 @@ const md = {
     '.remote-control': {
         'data-36000': "display: none;",
         'data-36001': "top: 1500px; display: block;",
-        'data-37000': "top: 480px;",
+        'data-37000': "top: 120px;",
         'style': "display: none; top: 1500px",
     },
     '.armchair': {
@@ -904,14 +904,14 @@ const md = {
     '.small-tree': {
         'data-36000': "display: none;",
         'data-36001': "left: 2500px; display: block;",
-        'data-37000': "left: 570px;",
+        'data-37000': "left: 20px;",
         'style': "display: none; left: 2500px",
     },
     //
     '.coffee-table': {
         'data-36000': "display: none;",
         'data-36001': "bottom: -2000px; display: block;",
-        'data-37000': "bottom: 200px;",
+        'data-37000': "bottom: 50px;",
         'style': "display: none; bottom: -2000px",
     },
     '.awards-container-bottom': {

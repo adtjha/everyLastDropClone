@@ -1442,7 +1442,7 @@ img.small-tree {
   }
   .remote-control {
     top: 540px;
-    left: 360px;
+    left: 600px;
   }
   .logos {
     bottom: 20px;
@@ -1454,14 +1454,15 @@ img.small-tree {
   img.small-tree {
     left: 570px;
     top: auto;
-    bottom: 20px;
+    bottom: 40px;
   }
   .coffee-table {
     bottom: 200px;
     top: auto;
+    right: 300px;
   }
   img.armchair {
-    top: 160px;
+    top: 420px;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 767px) {
