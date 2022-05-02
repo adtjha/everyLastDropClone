@@ -120,7 +120,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -136,7 +136,7 @@ q {
 
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -229,9 +229,9 @@ input {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
   *overflow: visible;
@@ -242,23 +242,23 @@ input[disabled] {
   cursor: default;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box;
   padding: 0;
   *height: 13px;
   *width: 13px;
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -332,7 +332,7 @@ textarea {
 }
 
 .ir:before {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 100%;
@@ -340,7 +340,7 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -353,7 +353,7 @@ textarea {
 }
 
 body {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 300;
   font-style: normal;
   color: #3d3d3d;
@@ -386,12 +386,11 @@ img {
 }
 
 @font-face {
-  font-family: "BPdotsRegular";
-  src: url("../fonts/BPdots-webfont.eot");
-  src: url("../fonts/BPdots-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/BPdots-webfont.woff") format("woff"),
-    url("../fonts/BPdots-webfont.ttf") format("truetype"),
-    url("../fonts/BPdots-webfont.svg#BPdotsRegular") format("svg");
+  font-family: 'BPdotsRegular';
+  src: url('../fonts/BPdots-webfont.eot');
+  src: url('../fonts/BPdots-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BPdots-webfont.woff') format('woff'), url('../fonts/BPdots-webfont.ttf') format('truetype'),
+    url('../fonts/BPdots-webfont.svg#BPdotsRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -411,7 +410,7 @@ img {
 .loading-container {
   width: 197px;
   height: 170px;
-  background: transparent url("../img/every-last-drop.png") no-repeat 0 0;
+  background: transparent url('../img/every-last-drop.png') no-repeat 0 0;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -578,7 +577,7 @@ img.moon {
 }
 
 .scroll-message:after {
-  content: url("../img/scroll-arrow.png");
+  content: url('../img/scroll-arrow.png');
   position: relative;
   top: 75px;
   left: 10px;
@@ -591,7 +590,7 @@ img.moon {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   background: #f1f1ea;
-  width: 40%;
+  width: 44%;
   position: absolute;
   left: 32%;
   top: 50%;
@@ -612,7 +611,7 @@ img.moon {
 }
 
 .ribbon-message:before {
-  content: url("../img/ribbon-left.png");
+  content: url('../img/ribbon-left.png');
   width: 27px;
   height: 137px;
   position: absolute;
@@ -621,7 +620,7 @@ img.moon {
 }
 
 .ribbon-message:after {
-  content: url("../img/ribbon-right.png");
+  content: url('../img/ribbon-right.png');
   width: 28px;
   height: 137px;
   position: absolute;
@@ -737,7 +736,7 @@ img.clock-hand {
 
 .bathroom-floor {
   height: 64%;
-  background: transparent url("../img/bathroom-tile.png") 0 0;
+  background: transparent url('../img/bathroom-tile.png') 0 0;
 }
 
 img.bathroom-sink {
@@ -773,7 +772,7 @@ img.bathroom-chair {
   position: absolute;
   left: 35%;
   top: 170px;
-  background: transparent url("../img/shower-curtain.png") no-repeat 0 0;
+  background: transparent url('../img/shower-curtain.png') no-repeat 0 0;
   width: 451px;
   height: 368px;
 }
@@ -879,7 +878,7 @@ img.kitchen-rug {
   height: 4000px;
   margin: 0 auto;
   position: relative;
-  background: transparent url("../img/road.png") 0 0;
+  background: transparent url('../img/road.png') 0 0;
 }
 
 .car-container {
@@ -1041,13 +1040,13 @@ img.traffic-lights {
 .stars-blurred {
   width: 100%;
   height: 100%;
-  background: transparent url("../img/stars-blurred.png");
+  background: transparent url('../img/stars-blurred.png');
 }
 
 .space-stars {
   width: 100%;
   height: 100%;
-  background: transparent url("../img/space-stars.png");
+  background: transparent url('../img/space-stars.png');
 }
 
 .space-container {
@@ -1299,7 +1298,7 @@ img.alien {
 }
 
 .tv {
-  background: transparent url("../img/tv.png") no-repeat 0 0;
+  background: transparent url('../img/tv.png') no-repeat 0 0;
   width: 540px;
   height: 399px;
   position: absolute;
@@ -1328,7 +1327,7 @@ iframe#vimeo-player {
 }
 
 .remote-control {
-  background: transparent url("../img/remote-control.png") no-repeat 0 0;
+  background: transparent url('../img/remote-control.png') no-repeat 0 0;
   width: 88px;
   height: 238px;
   position: absolute;
@@ -1337,7 +1336,7 @@ iframe#vimeo-player {
 }
 
 .play-video {
-  background: transparent url("../img/play-button.png") no-repeat 0 0;
+  background: transparent url('../img/play-button.png') no-repeat 0 0;
   width: 57px;
   height: 60px;
   cursor: pointer;
@@ -1348,11 +1347,11 @@ iframe#vimeo-player {
 }
 
 .play-video:active {
-  background: transparent url("../img/play-button-down.png") no-repeat 0 0;
+  background: transparent url('../img/play-button-down.png') no-repeat 0 0;
 }
 
 .close-video {
-  background: transparent url("../img/stop-button.png") no-repeat 0 0;
+  background: transparent url('../img/stop-button.png') no-repeat 0 0;
   width: 57px;
   height: 60px;
   cursor: pointer;
@@ -1363,7 +1362,7 @@ iframe#vimeo-player {
 }
 
 .close-video:active {
-  background: transparent url("../img/stop-button-down.png") no-repeat 0 0;
+  background: transparent url('../img/stop-button-down.png') no-repeat 0 0;
 }
 
 img.armchair {
@@ -1377,7 +1376,7 @@ img.small-tree {
 }
 
 .coffee-table {
-  background: transparent url("../img/coffee-table.png") no-repeat 0 0;
+  background: transparent url('../img/coffee-table.png') no-repeat 0 0;
   width: 253px;
   height: 115px;
   position: absolute;
@@ -1394,7 +1393,7 @@ img.small-tree {
 }
 
 .back-to-top:before {
-  content: url("../img/back-to-top-icon.png");
+  content: url('../img/back-to-top-icon.png');
   position: relative;
   top: 10px;
   padding-right: 10px;
@@ -1422,7 +1421,7 @@ img.small-tree {
 
 .ns a.logo {
   display: block;
-  background: transparent url("../img/nice-and-serious.png") no-repeat 0 0;
+  background: transparent url('../img/nice-and-serious.png') no-repeat 0 0;
   width: 217px;
   height: 98px;
   position: relative;
@@ -1435,29 +1434,11 @@ img.small-tree {
 
 .waterwise a.waterwise-logo {
   display: block;
-  background: transparent url("../img/waterwise-logo.png") no-repeat 0 0;
+  background: transparent url('../img/waterwise-logo.png') no-repeat 0 0;
   width: 257px;
   height: 98px;
   position: relative;
   text-indent: -9999px;
-}
-
-.social-container {
-  position: absolute;
-  top: 25px;
-  left: 130px;
-  width: 350px;
-}
-
-.twitter-share-button,
-.fb-like,
-.google-button {
-  position: relative;
-  float: left;
-}
-
-.fb-like {
-  margin-left: 35px;
 }
 
 .awards-container-bottom {
@@ -1494,7 +1475,7 @@ img.small-tree {
   background-repeat: no-repeat;
   background-position: 0 0;
   overflow: hidden;
-  background-image: url("../ribbons/cssa-dark-sotd.png");
+  background-image: url('../ribbons/cssa-dark-sotd.png');
   background-size: 100px 100px;
   z-index: 100;
 }
@@ -1507,7 +1488,7 @@ img.small-tree {
   background-repeat: no-repeat;
   background-position: 0 0;
   overflow: hidden;
-  background-image: url("../ribbons/awwwards_sotd_white_left.png");
+  background-image: url('../ribbons/awwwards_sotd_white_left.png');
   z-index: 100;
 }
 
@@ -1519,7 +1500,7 @@ img.small-tree {
   background-repeat: no-repeat;
   background-position: 0 0;
   overflow: hidden;
-  background-image: url("../ribbons/css-design-awards-winner-left-black.png");
+  background-image: url('../ribbons/css-design-awards-winner-left-black.png');
   z-index: 100;
 }
 
@@ -1531,17 +1512,17 @@ img.small-tree {
   background-repeat: no-repeat;
   background-position: 0 0;
   overflow: hidden;
-  background-image: url("../ribbons/css-winner-white-left.png");
+  background-image: url('../ribbons/css-winner-white-left.png');
   z-index: 100;
 }
-
+/*
 @media (max-width: 767px) {
   .awwwards,
   .cssda,
   .css-winner {
     display: none;
   }
-}
+} */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -1553,6 +1534,504 @@ img.small-tree {
     -o-background-size: 70px 105px;
     -webkit-background-size: 70px 105px;
     background-size: 70px 105px;
-    background-image: url("../ribbons/awwwards_sotd_white_left2x.png");
+    background-image: url('../ribbons/awwwards_sotd_white_left2x.png');
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Bedroom */
+  .sky,
+  .sky-inner,
+  .title {
+    min-height: 14rem;
+    width: 100%;
+  }
+
+  .sky-inner {
+    width: 768px;
+  }
+
+  .floor-inner,
+  .floor-inner-below {
+    width: 768px;
+  }
+
+  .logo {
+    transform: scale(0.8);
+    left: 1rem;
+    margin-top: 2rem !important;
+  }
+
+  .moon {
+    right: 2rem !important;
+  }
+
+  .sun {
+    right: 16%;
+  }
+
+  .scroll-message {
+    left: 14rem;
+    top: 3rem;
+    font-size: x-large;
+    font-weight: 600;
+    color: #ffffff63;
+  }
+
+  .ribbon-message {
+    top: 48%;
+    left: 38%;
+    transform: scale(1.4);
+  }
+
+  /* Character */
+
+  img.bed-frame,
+  img.bed-sheet {
+    top: 21rem;
+    left: 34%;
+  }
+
+  img.juan,
+  img.juan-awake {
+    top: 35%;
+    left: 310px;
+  }
+
+  .wall-inner {
+    width: 100%;
+  }
+
+  img.bathroom-sink {
+    top: 50%;
+    transform: scale(0.8);
+  }
+
+  img.bath,
+  img.bath-top {
+    left: 34%;
+  }
+
+  img.bathroom-mat {
+    left: 270px;
+  }
+
+  img.bathroom-chair {
+    top: 60%;
+  }
+
+  .character-container-inner {
+    width: 768px;
+  }
+
+  .shower-curtain {
+    left: 32%;
+    top: 328px;
+  }
+
+  .kitchen-wall-inner {
+    width: 768px;
+  }
+
+  img.kitchen-counters {
+    max-height: 240px;
+    max-width: 376.72px;
+    top: 35%;
+  }
+
+  img.knife-rack {
+    left: 30%;
+  }
+
+  img.kitchen-shelf {
+    right: 20%;
+  }
+
+  img.knife-rack,
+  img.kitchen-shelf {
+    transform: scale(0.8);
+  }
+
+  img.juan-nomnom {
+    left: 105px;
+    top: 270px;
+  }
+
+  img.roadworks {
+    right: -8%;
+    transform: scale(0.6);
+  }
+
+  img.roadworks-scroll {
+    right: -3%;
+    top: 2110px;
+    transform: scale(0.8);
+  }
+
+  img.roadworks-sign,
+  .roadworks-sign-text {
+    right: -3%;
+    top: 2100px;
+    transform: scale(0.9);
+  }
+
+  img.traffic-lights {
+    top: 2200px;
+    right: 630px;
+  }
+
+  .space-container {
+    width: 768px;
+  }
+
+  img.saturn {
+    top: 900px;
+  }
+
+  img.mercury {
+    top: 650px;
+  }
+
+  .living-room-container {
+    width: 768px;
+  }
+
+  .tv {
+    top: 60px;
+  }
+
+  .remote-control {
+    top: 540px;
+    left: 360px;
+  }
+
+  .logos {
+    bottom: 20px;
+    top: auto;
+  }
+
+  .ns a.logo {
+    margin-top: 0 !important;
+  }
+
+  img.small-tree {
+    left: 570px;
+    top: auto;
+    bottom: 20px;
+  }
+
+  .coffee-table {
+    bottom: 200px;
+    top: auto;
+  }
+
+  img.armchair {
+    top: 468px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  /* Bedroom */
+  .sky,
+  .sky-inner,
+  .title {
+    min-height: 14rem;
+    width: 100%;
+  }
+
+  .sky-inner,
+  .floor-inner,
+  .floor-inner-below,
+  .character-container-inner,
+  .kitchen-wall-inner,
+  .space-container,
+  .wall-inner,
+  .living-room-container {
+    width: 360px;
+  }
+
+  img.logo {
+    transform: scale(0.6);
+    left: -6%;
+    margin-top: 6%;
+  }
+
+  img.moon {
+    margin-top: 40px;
+    max-width: 75.21px;
+    max-height: 95px;
+    right: 2rem;
+  }
+
+  img.sun {
+    right: 16%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .scroll-message {
+    left: 8rem;
+    top: 10rem;
+    font-size: larger;
+    font-weight: 500;
+    color: #ffffff63;
+  }
+
+  .scroll-message:after {
+    content: url('../img/scroll-arrow-sm.png');
+    top: 30px;
+    left: -70px;
+  }
+
+  .ribbon-message {
+    top: 45%;
+    left: 0%;
+    width: 100%;
+  }
+
+  img.desk {
+    display: block;
+    max-width: 95px;
+    max-height: 93.29px;
+  }
+
+  img.side-table {
+    top: 2%;
+    max-width: 226.19px;
+    max-height: 95px;
+  }
+
+  img.rug {
+    max-width: 222.66px;
+    max-height: 95px;
+  }
+
+  img.tree {
+    max-width: 41.56px;
+    max-height: 95px;
+    top: -2%;
+  }
+
+  /* Character */
+
+  img.bed-frame,
+  img.bed-sheet {
+    top: 340px;
+    left: 8%;
+    min-width: 295.2px;
+    min-height: 420px;
+    max-width: 267.3px;
+    max-height: 380px;
+  }
+
+  img.juan,
+  img.juan-awake {
+    top: 45%;
+    left: 20%;
+    max-height: 260px;
+    max-width: 104px;
+  }
+
+  .bathroom-wall {
+    height: 50%;
+  }
+
+  img.bathroom-light {
+    transform: scale(0.6);
+    top: -7%;
+  }
+
+  img.mirror,
+  img.mirror-text {
+    top: 30%;
+  }
+
+  img.shelf {
+    top: 80%;
+  }
+
+  img.window {
+    display: none !important;
+  }
+
+  img.clock-face,
+  img.clock-hand {
+    top: 5%;
+  }
+
+  img.bathroom-sink {
+    top: 47%;
+    max-width: 132.57px;
+    max-height: 168.91px;
+  }
+
+  img.bath,
+  img.bath-top {
+    left: 2%;
+    max-width: 346.4px;
+    max-height: 350.4px;
+  }
+
+  img.bathroom-mat {
+    left: 10px;
+    max-width: 328.8px;
+    max-height: 121.6px;
+  }
+
+  img.bathroom-chair {
+    top: 50%;
+    max-width: 62.4px;
+    max-height: 155.4px;
+  }
+
+  .shower-curtain {
+    left: -6%;
+    top: 312px;
+    height: 320px;
+  }
+
+  img.wardrobe,
+  img.wardrobe-rail {
+    top: 50%;
+    max-width: 293.4px;
+    max-height: 283.2px;
+  }
+
+  img.picture-frame,
+  img.picture-frame-icons {
+    top: 0%;
+  }
+
+  img.lamp {
+    display: none !important;
+  }
+
+  img.wardrobe-rug {
+    left: -1%;
+  }
+
+  img.kitchen-counters {
+    max-height: 192px;
+    top: 45%;
+  }
+
+  img.knife-rack {
+    display: none !important;
+  }
+
+  img.kitchen-shelf {
+    max-width: 126.6px;
+    max-height: 49.8px;
+    right: 0%;
+  }
+
+  img.chalkboard,
+  img.chalk-notes {
+    top: 0%;
+  }
+
+  img.table {
+    top: 450px;
+  }
+
+  img.bin {
+    height: 75px;
+  }
+
+  img.juan-nomnom {
+    left: 105px;
+    top: 270px;
+  }
+
+  img.roadworks {
+    right: -30%;
+    transform: scale(0.4);
+  }
+
+  img.roadworks-scroll {
+    right: -21%;
+    top: 2060px;
+    transform: scale(0.6);
+  }
+
+  img.roadworks-sign,
+  .roadworks-sign-text {
+    right: -21%;
+    top: 2100px;
+    transform: scale(0.6);
+  }
+
+  img.traffic-lights {
+    right: 143px;
+    transform: scale(0.6);
+  }
+
+  img.earth {
+    left: -50px;
+    transform: scale(0.6);
+  }
+
+  img.saturn {
+    top: 900px;
+  }
+
+  img.mercury {
+    top: 650px;
+  }
+
+  .alien-container {
+    top: 0px;
+  }
+
+  .tv {
+    top: -50px;
+    transform: scale(0.6);
+    left: -100px !important;
+  }
+
+  .awards-container-bottom {
+    transform: scale(0.8);
+    left: -10px;
+  }
+
+  .remote-control {
+    top: 360px;
+    left: 10px;
+  }
+
+  .logos {
+    bottom: 20px;
+    top: auto;
+    transform: scale(0.6);
+    left: -100px;
+    font-weight: 600;
+    letter-spacing: 1.2;
+  }
+
+  .ns a.logo {
+    margin-top: 0 !important;
+  }
+
+  .waterwise {
+    margin-left: 0px;
+  }
+
+  img.small-tree {
+    left: 570px;
+    top: auto;
+    bottom: 100px;
+    transform: scale(0.6);
+  }
+
+  .coffee-table {
+    bottom: 200px;
+    top: auto;
+    right: -40px;
+    transform: scale(0.8);
+  }
+
+  img.armchair {
+    top: 260px;
+    transform: scale(0.8);
   }
 }

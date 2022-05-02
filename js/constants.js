@@ -1,0 +1,1375 @@
+
+// Bedroom
+// sky
+// sky-inner
+// title
+//
+// floor
+
+const xl = {
+    // ## ## Bedroom
+    // ## sky
+    ".stars": {
+        'style': 'top: 10%; left: 22%',
+        'data-0': 'top: 10%; left: 22%;',
+        'data-1000': 'top: -100%; left: 30%;',
+    },
+    '.sun': {
+        'style': 'top: 100%; right: 20%',
+        'data-100': 'top: 100%; right: 20%;',
+        'data-1000': 'top: 10%; right: 0%;',
+    },
+    // ## floor
+    '.desk': {
+        'style': 'top: 12%; display: block',
+        'data-1700': 'top: 12%; display: block;',
+        'data-2700': 'top: -100%; display: none;',
+    },
+    '.side-table': {
+        'style': 'right: 0%; display: block',
+        'data-1700': 'right: 0%; display: block;',
+        'data-2700': 'right: 200%; display: none;',
+    },
+    '.rug': {
+        'style': 'top: 0%; display: block',
+        'data-1800': 'top: 0%; display: block;',
+        'data-2700': 'top: 190%; display: none;',
+    },
+    '.tree': {
+        'style': 'right: 0%; display: block',
+        'data-1900': 'right: 0%; display: block;',
+        'data-2700': 'right: 190%; display: none;',
+    },
+    // ## ## Bathroom
+    // ## wall
+    '.bathroom-light': {
+        'data-2700': "display:none;",
+        'data-2701': "left: -100%; display: block;",
+        'data-3700': "left: 47%;",
+        'data-6200': "left: 47%;",
+        'data-7200': "left: 150%; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.mirror': {
+        'data-6200': "left: 0%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 0%; display: block",
+    },
+    '.mirror-text': {
+        'data-4800': "opacity: 0;",
+        'data-5000': "opacity: 1;",
+        'data-6200': "left: 0%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "opacity: 0; display: block; left: 0%",
+    },
+    '.shelf': {
+        'data-6200': "left: 50%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 50%; display: block",
+    },
+    '.window': {
+        'data-6300': "left: 70%",
+        'data-7200': "left: 200%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 70%; display: block",
+    },
+    'clock-face': {
+        'data-6200': "right: 0%",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "right: 0%; display: block",
+    },
+    '.clock-hand': {
+        'data-5500': "transform: rotate(0deg);",
+        'data-6000': "transform: rotate(750deg);",
+        'data-6200': "right: 0%",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "transform: rotate(0deg); display: block; right: 0%",
+    },
+    '.bathroom-mat': {
+        'data-6200': "top: 600px",
+        'data-7200': "top: -1000px; display: block",
+        'data-7201': "display: none;",
+        'style': "top: 600px; display: block",
+    },
+    '.bath': {
+        'data-3700': "display: none;",
+        'data-3701': "top: 1000px; display: block;",
+        'data-3900': "top: 200px;",
+        'data-6200': "top: 200px;",
+        'data-7200': "top: 1000px; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; top: 1000px",
+    },
+    // ## floor
+    '.bathroom-sink': {
+        'data-6200': "left: 3%;",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 3%; display: block",
+    },
+    '.bathroom-chair': {
+        'data-6200': "right: 3%;",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "right: 3%; display: block",
+    },
+    // ## ## Wardrobe
+    // ## wall
+    '.wardrobe': {
+        'data-8700': "display: none",
+        'data-8701': "left: -100%; display: block",
+        'data-9700': "left: 0%;",
+        'data-11700': "left: 0%;",
+        'data-12700': "left: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.wardrobe-rail': {
+        'data-9000': "display: none;",
+        'data-9001': "top: 300%; display: block;",
+        'data-10000': "top: 20%;",
+        'data-11700': "left: 0%;",
+        'data-12700': "left: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; top: 300%; left: 0%",
+    },
+    '.picture-frame': {
+        'data-8700': "display: none;",
+        'data-8701': "right: -100%; display: block;",
+        'data-9700': "right: 15%;",
+        'data-11700': "right: 15%;",
+        'data-12700': "right: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; right: -100%",
+    },
+    '.picture-frame-icons': {
+        'data-10500': "opacity: 0;",
+        'data-10700': "opacity: 1;",
+        'data-11700': "right: 15%;",
+        'data-12700': "right: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "opacity: 0; display: block; right: 15%",
+    },
+    '.lamp': {
+        'data-8700': "display: none;",
+        'data-8701': "right: -100%; display: block;",
+        'data-9700': "right: -2%;",
+        'data-11700': "top: 45%;",
+        'data-12700': "top: 400%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; right: -100%; top: 45%",
+    },
+    // ## floor
+    '.wardrobe-rug': {
+        'data-8700': "display: none;",
+        'data-8701': "display: block; top: 100%;",
+        'data-9700': "top: 50%;",
+        'data-11700': "top: 50%;",
+        'data-12700': "top: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; top: 100%",
+    },
+    // ## ## Kitchen
+    // ## wall
+    '.kitchen-counter': {
+        'data-13700': "display: none;",
+        'data-13701': "right: -100%; display: block;",
+        'data-14700': "right: 0%;",
+        'data-16700': "right: 0%;",
+        'data-17700': "right: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; right: -100%",
+    },
+    '.knife-rack': {
+        'data-13700': "display: none;",
+        'data-13701': "top: -100%; display: block;",
+        'data-14700': "top: 30%;",
+        'data-16700': "top: 30%;",
+        'data-17700': "top: 400%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; top: -100%",
+    },
+    '.kitchen-shelf': {
+        'data-13700': "display: none;",
+        'data-13701': "top: -100%; display: block;",
+        'data-14700': "top: 20%;",
+        'data-16700': "top: 20%;",
+        'data-17500': "top: 400%; display: block;",
+        'data-17501': "display: none;",
+        'style': "display: none; top: -100%",
+    },
+    '.chalkboard': {
+        'data-13700': "display: none;",
+        'data-13701': "left: -100%; display: block;",
+        'data-14700': "left: 0%;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.chalk-notes': {
+        'data-15300': "opacity: 0;",
+        'data-15500': "opacity: 1;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "opacity: 0; display: block; left: 0%",
+    },
+    // ## floor
+    '.bin': {
+        'data-13700': "display: none;",
+        'data-13701': "top: 100%; left: -100%; display: block;",
+        'data-14700': "top: 30%; left: 45%;",
+        'data-16700': "top: 30%; left: 45%;",
+        'data-17700': "top: -100%; left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; top: 100%; left: -100%",
+    },
+    '.kitchen-rug': {
+        'data-13700': "display: none;",
+        'data-13701': "top: 100%; display: block;",
+        'data-14700': "top: 40%;",
+        'data-16700': "top: 40%;",
+        'data-17700': "top: -100%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; top: 100%",
+    },
+    // ## ## Road
+    // ## contents
+    '.road': {
+        'data-18700': "margin-top: 0px",
+        'data-24700': "margin-top: -2000px",
+        'data-27200': "width: 650px; background-position: -150px 0px;",
+        'data-27700': "width: 0px; background-position: -500px 0px;",
+        'style': "margin-top: 0px; width: 650px; background-position: -150px 0px",
+    },
+    '.roadworks-scroll': {
+        'data-24700': "display: none;",
+        'data-24701': "display: block;",
+        'data-26000': "opacity: 1;",
+        'data-26200': "opacity: 0;",
+        'style': "display: none; opacity: 1",
+    },
+    '.roadworks-sign': {
+        'data-26700': "top: 2100px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2100px",
+    },
+    '.roadworks-sign-text': {
+        'data-26700': "top: 2100px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2100px",
+    },
+    '.traffic-lights': {
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2200px",
+    },
+    '.traffic-lights-red': {
+        'data-24400': "display: none;",
+        'data-24500': "display: block;",
+        'data-26400': "display: block;",
+        'data-26500': "display: none;",
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "display: none; top: 2200px",
+    },
+    '.traffic-lights-orange': {
+        'data-24300': "display: none;",
+        'data-24350': "display: block;",
+        'data-24400': "display: none;",
+        'data-26500': "display: none;",
+        'data-26550': "display: block;",
+        'data-26600': "display: none;",
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "display: none; top: 2200px",
+    },
+    '.traffic-lights-green': {
+        'data-24200': "display: block;",
+        'data-24300': "display: none;",
+        'data-26600': "display: none;",
+        'data-26700': "top: 2200px; display: block;",
+        'data-27200': "top: 1000px;",
+        'style': "display: block; top: 2200px",
+    },
+    // ## ## Space
+    // ## container
+    '.spacesuit': {
+        'data-27700': "display: none;",
+        'data-27701': "width: 0px; height: 0px; display: block; right: 750px; top: 300px;",
+        'data-28700': "width: 176px; height: 329px; right: 225px; top: 210px;",
+        'data-34000': "top: 240px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 300px; width: 0px; height: 0px; right: 750px",
+    },
+    '.earth': {
+        'data-28700': "display: none;",
+        'data-28701': "top: 1100px; display: block;",
+        'data-29700': "top: 300px;",
+        'data-34000': "top: 300px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 1100px",
+    },
+    '.saturn': {
+        'data-28700': "display: none;",
+        'data-28701': "right: -150%; display: block;",
+        'data-29700': "right: 40%;",
+        'data-34000': "top: 600px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 600px; right: -150%",
+    },
+    '.mercury': {
+        'data-28700': "display: none;",
+        'data-28701': "left: -150%; display: block;",
+        'data-29700': "left: 84%;",
+        'data-34000': "top: 550px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 550px; left: -150%",
+    },
+    '.venus': {
+        'data-28700': "display: none;",
+        'data-28701': "top: -50%; display: block;",
+        'data-29700': "top: 10%;",
+        'data-34000': "top: 10%;",
+        'data-35000': "top: -20%;",
+        'style': "display: none; top: -50%",
+    },
+    '.alien-container': {
+        'data-29700': "display: none;",
+        'data-29701': "display: block; left: -1000px;",
+        'data-32000': "display: block; left: 0px;",
+        'data-33000': "display: block; left: 0px;",
+        'data-34000': "display: block; left: 2000px;",
+        'data-34001': "display: none;",
+        'style': "display: none; left: -1000px",
+    },
+    // ## ## Character
+    '.bed-frame': {
+        'style': "top: 290px; display: block",
+        'data-1700': "top: 290px; display: block;",
+        'data-2700': "top: 1500px; display: none;",
+    },
+    '.juan-slept': {
+        'style': "display: block",
+        'data-1201': "display: block;",
+        'data-1202': "display: none;",
+    },
+    '.juan-awake': {
+        'style': "opacity: 0; display: block; top: 360px",
+        'data-1200': "opacity: 0;",
+        'data-1201': "opacity: 1;",
+        'data-2700': "top: 360px;",
+        'data-3700': "top: 260px;",
+        'data-6000': "display: block;",
+        'data-6001': "display: none;",
+    },
+    '.juan-shower': {
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 480px;",
+        'data-8700': "left: 600px;",
+        'data-11100': "opacity: 1;",
+        'data-11200': "opacity: 0;",
+        'style': "display: none; opacity: 1; left: 480px",
+    },
+    '.juan-naked': {
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 480px;",
+        'data-8700': "left: 600px;",
+        'data-12700': "left: 600px; top: 261px;",
+        'data-13700': "left: 105px; top: 270px;",
+        'data-17701': "width: 126px; height: 315px;",
+        'data-18300': "width: 63px; height: 157px; display: block;",
+        'data-18301': "display: none;",
+        'style': "display: none; left: 480px; top: 261px; width: 126px; height: 315px",
+    },
+    '.juan-bubbles': {
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 480px;",
+        'data-8700': "left: 600px;",
+        'data-11000': "opacity: 1;",
+        'data-11100': "opacity: 0;",
+        'style': "display: none; opacity: 1; left: 480px",
+    },
+    '.juan-clothes': {
+        'data-10500': "opacity: 0;",
+        'data-11200': "opacity: 1;",
+        'data-12700': "left: 600px; top: 261px;",
+        'data-13700': "left: 105px; top: 270px;",
+        'data-17701': "width: 126px; height: 315px;",
+        'data-18300': "width: 63px; height: 157px; display: block;",
+        'data-18301': "display: none;",
+        'style': "opacity: 0; display: block; left: 600px; top: 261px; width: 126px; height: 315px",
+    },
+    'juan-nomnom': {
+        'data-15300': "opacity: 0;",
+        'data-15500': "opacity: 1;",
+        'data-16300': "opacity: 1;",
+        'data-16500': "opacity: 0;",
+        'style': "opacity: 0",
+    },
+    '.bed-sheet': {
+        'data-1700': "left: 44%; display: block;",
+        'data-2700': "left: 200%; display: none;",
+        'style': "left: 44%; display: block",
+    },
+    '.bath-top': {
+        'data-3700': "display: none;",
+        'data-3701': "top: 1000px; display: block;",
+        'data-3900': "top: 200px;",
+        'data-6200': "top: 200px;",
+        'data-7200': "top: 1000px; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; top: 1000px",
+    },
+    'shower-curtain': {
+        'data-4000': "width: 0px",
+        'data-4500': "width: 451px;",
+        'data-6200': "width: 451px;",
+        'data-7200': "width: 0px;",
+        'style': "width: 0px",
+    },
+    '.table': {
+        'data-13700': "display: none;",
+        'data-13701': "left: -100%; display: block;",
+        'data-14700': "left: 0%;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    // ## ## Car/Spaceship
+    // ## container-inner
+    '.car-container-inner': {
+        'data-17700': "display: none;",
+        'data-17701': "display: block; left: -100%;",
+        'data-18700': "left: 62%;",
+        'data-19000': "left: 62%;",
+        'data-20000': "left: 14%;",
+        'data-27000': "transform: rotate(0deg);",
+        'data-27695': "transform: rotate(160deg);",
+        'data-27701': "width: 254px;",
+        'data-28700': "width: 100px; opacity: 1;",
+        'data-28900': "opacity: 0; display: block;",
+        'data-28901': "display: none;",
+        'style': "display: none; left: -100%; transform: rotate(0deg); width: 254px; opacity: 1",
+    },
+    // ## ## Living Room
+    '.tv': {
+        'data-36000': "display: none;",
+        'data-36001': "left: -1500px; display: block;",
+        'data-37000': "left: 0px;",
+        'style': "display: none; left: -1500px",
+    },
+    '.remote-control': {
+        'data-36000': "display: none;",
+        'data-36001': "top: 1500px; display: block;",
+        'data-37000': "top: 120px;",
+        'style': "display: none; top: 1500px",
+    },
+    '.armchair': {
+        'data-36000': "display: none;",
+        'data-36001': "right: -1500px; display: block;",
+        'data-37000': "right: 0px;",
+        'style': "display: none; right: -1500px",
+    },
+    '.logos': {
+        'data-36000': "display: none;",
+        'data-36001': "top: 2500px; display: block;",
+        'data-37000': "top: 500px;",
+        'style': "display: none; top: 2500px",
+    },
+    '.small-tree': {
+        'data-36000': "display: none;",
+        'data-36001': "left: 2500px; display: block;",
+        'data-37000': "left: 570px;",
+        'style': "display: none; left: 2500px",
+    },
+    '.coffee-table': {
+        'data-36000': "display: none;",
+        'data-36001': "top: 2000px; display: block;",
+        'data-37000': "top: 520px;",
+        'style': "display: none; top: 2000px",
+    },
+    '.awards-container-bottom': {
+        'data-36500': "display: none;",
+        'data-36501': "display: block; top: 2000px;",
+        'data-37000': "top: 0px;",
+        'style': "display: none; top: 2000px",
+    },
+}
+
+const md = {
+    // #### BEDROOM
+    // ## sky
+    ".stars": {
+        'style': 'top: 10%; left: 22%;',
+        'data-0': 'top: 10%; left: 22%;',
+    },
+    '.sun': {
+        'style': 'top: 100%; right: 16%;',
+        'data-100': 'top: 100%; right: 60%;',
+        'data-1000': 'top: 10%; right: 16%;',
+    },
+    // ## floor
+    '.desk': {
+        'style': 'top: 8%; left: -10%; transform: scale(0.6); display: block;',
+        'data-1700': 'top: 8%; left: -10%; transform: scale(0.6); display: block;',
+        'data-2700': 'left: -6%; top: -100%; display: none;',
+    },
+    '.side-table': {
+        'style': 'right: -2%; transform: scale(0.6); display: block;',
+        'data-1700': 'right: -2%; transform: scale(0.6); display: block;',
+        'data-2700': 'right: 200%; display: none;',
+    },
+    '.rug': {
+        'style': 'top: -10%; transform: scale(0.6); left: -4%; display: block;',
+        'data-1800': 'top: -10%; transform: scale(0.6); left: -4%; display: block;',
+        'data-2700': 'top: 190%; display: none;',
+    },
+    '.tree': {
+        'style': 'right: 2%; transform: scale(0.6); display: block;',
+        'data-1900': 'right: 2%; transform: scale(0.6); display: block;',
+        'data-2700': 'right: 214%; display: none;',
+    },
+    // ## ## Bathroom
+    // ## wall
+    '.bathroom-light': {
+        'data-2700': "display:none;",
+        'data-2701': "left: -100%; display: block;",
+        'data-3700': "left: 47%;",
+        'data-6200': "left: 47%;",
+        'data-7200': "left: 150%; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.mirror': {
+        'data-6200': "left: 0%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 0%; display: block",
+    },
+    '.mirror-text': {
+        'data-4800': "opacity: 0;",
+        'data-5000': "opacity: 1;",
+        'data-6200': "left: 0%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "opacity: 0; display: block; left: 0%",
+    },
+    '.shelf': {
+        'data-6200': "left: 50%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 50%; display: block",
+    },
+    '.window': {
+        'data-6300': "left: 70%",
+        'data-7200': "left: 200%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 70%; display: block",
+    },
+    'clock-face': {
+        'data-6200': "right: 0%",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "right: 0%; display: block",
+    },
+    '.clock-hand': {
+        'data-5500': "transform: rotate(0deg);",
+        'data-6000': "transform: rotate(750deg);",
+        'data-6200': "right: 0%",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "transform: rotate(0deg); display: block; right: 0%",
+    },
+    //
+    '.bathroom-mat': {
+        'data-6200': "top: 720px",
+        'data-7200': "top: -1000px; display: block",
+        'data-7201': "display: none;",
+        'style': "top: 720px; display: block",
+    },
+    //
+    '.bath': {
+        'data-3700': "display: none;",
+        'data-3701': "top: 1000px; display: block;",
+        'data-3900': "top: 360px;",
+        'data-6200': "top: 360px;",
+        'data-7200': "top: 1000px; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; top: 1000px",
+    },
+    // ## ## Character
+    //
+    '.bed-frame': {
+        'style': "top: 320px; display: block",
+        'data-1700': "top: 320px; display: block;",
+        'data-2700': "top: 1500px; display: none;",
+    },
+    '.juan-slept': {
+        'style': "display: block",
+        'data-1201': "display: block;",
+        'data-1202': "display: none;",
+    },
+    //
+    '.juan-awake': {
+        'style': "opacity: 0; display: block; top: 35%",
+        'data-1200': "opacity: 0;",
+        'data-1201': "opacity: 1;",
+        'data-2700': "top: 35%;",
+        'data-3700': "top: 35%;",
+        'data-6000': "display: block;",
+        'data-6001': "display: none;",
+    },
+    //
+    '.juan-shower': {
+        'style': "display: none; opacity: 1; left: 360px",
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 360px;",
+        'data-8700': "left: 480px;",
+        'data-11100': "opacity: 1;",
+        'data-11200': "opacity: 0;",
+    },
+    //
+    '.juan-naked': {
+        'style': "display: none; left: 360px; top: 413px; width: 126px; height: 315px",
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 360px;",
+        'data-8700': "left: 480px;",
+        'data-12700': "left: 480px; top: 413px;",
+        'data-13700': "left: 105px; top: 270px;",
+        'data-17701': "width: 126px; height: 315px;",
+        'data-18300': "width: 63px; height: 157px; display: block;",
+        'data-18301': "display: none;",
+    },
+    //
+    '.juan-bubbles': {
+        'style': "display: none; opacity: 1; left: 360px",
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 360px;",
+        'data-8700': "left: 480px;",
+        'data-11000': "opacity: 1;",
+        'data-11100': "opacity: 0;",
+    },
+    //
+    '.juan-clothes': {
+        'style': "opacity: 0; display: block; left: 480px; top: 413.59px; width: 126px; height: 315px",
+        'data-10500': "opacity: 0;",
+        'data-11200': "opacity: 1;",
+        'data-12700': "left: 480px; top: 413.59px;",
+        'data-13700': "left: 105px; top: 270px;",
+        'data-17701': "width: 126px; height: 315px;",
+        'data-18300': "width: 63px; height: 157px; display: block;",
+        'data-18301': "display: none;",
+    },
+    'juan-nomnom': {
+        'data-15300': "opacity: 0;",
+        'data-15500': "opacity: 1;",
+        'data-16300': "opacity: 1;",
+        'data-16500': "opacity: 0;",
+        'style': "opacity: 0",
+    },
+    //
+    '.bed-sheet': {
+        'data-1700': "left: 34%; display: block;",
+        'data-2700': "left: 200%; display: none;",
+        'style': "left: 34%; display: block;",
+    },
+    //
+    '.bath-top': {
+        'data-3700': "display: none;",
+        'data-3701': "top: 1000px; display: block;",
+        'data-3900': "top: 360px;",
+        'data-6200': "top: 360px;",
+        'data-7200': "top: 1000px; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; top: 1000px",
+    },
+    '.table': {
+        'data-13700': "display: none;",
+        'data-13701': "left: -100%; display: block;",
+        'data-14700': "left: 0%;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    // ## ## Road
+    // ## contents
+    //
+    '.road': {
+        'data-18700': "margin-top: 0px",
+        'data-24700': "margin-top: -2000px",
+        'data-27200': "width: 650px; background-position: -150px 0px;",
+        'data-27700': "width: 0px; background-position: -500px 0px;",
+        'style': "margin-top: 0px; width: 650px; background-position: -150px 0px",
+    },
+    '.roadworks-scroll': {
+        'data-24700': "display: none;",
+        'data-24701': "display: block;",
+        'data-26000': "opacity: 1;",
+        'data-26200': "opacity: 0;",
+        'style': "display: none; opacity: 1",
+    },
+    '.roadworks-sign': {
+        'data-26700': "top: 2100px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2100px",
+    },
+    '.roadworks-sign-text': {
+        'data-26700': "top: 2100px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2100px",
+    },
+    '.traffic-lights': {
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2200px",
+    },
+    '.traffic-lights-red': {
+        'data-24400': "display: none;",
+        'data-24500': "display: block;",
+        'data-26400': "display: block;",
+        'data-26500': "display: none;",
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "display: none; top: 2200px",
+    },
+    '.traffic-lights-orange': {
+        'data-24300': "display: none;",
+        'data-24350': "display: block;",
+        'data-24400': "display: none;",
+        'data-26500': "display: none;",
+        'data-26550': "display: block;",
+        'data-26600': "display: none;",
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "display: none; top: 2200px",
+    },
+    '.traffic-lights-green': {
+        'data-24200': "display: block;",
+        'data-24300': "display: none;",
+        'data-26600': "display: none;",
+        'data-26700': "top: 2200px; display: block;",
+        'data-27200': "top: 1000px;",
+        'style': "display: block; top: 2200px",
+    },
+    // ## ## Space
+    // ## container
+    '.spacesuit': {
+        'data-27700': "display: none;",
+        'data-27701': "width: 0px; height: 0px; display: block; right: 750px; top: 300px;",
+        'data-28700': "width: 176px; height: 329px; right: 225px; top: 210px;",
+        'data-34000': "top: 240px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 300px; width: 0px; height: 0px; right: 750px",
+    },
+    '.earth': {
+        'data-28700': "display: none;",
+        'data-28701': "top: 1100px; display: block;",
+        'data-29700': "top: 300px;",
+        'data-34000': "top: 300px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 1100px",
+    },
+    //
+    '.saturn': {
+        'data-28700': "display: none;",
+        'data-28701': "right: -150%; display: block;",
+        'data-29700': "right: 40%;",
+        'data-34000': "top: 900px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 900px; right: -150%",
+    },
+    //
+    '.mercury': {
+        'data-28700': "display: none;",
+        'data-28701': "left: -150%; display: block;",
+        'data-29700': "left: 84%;",
+        'data-34000': "top: 650px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 650px; left: -150%",
+    },
+    '.venus': {
+        'data-28700': "display: none;",
+        'data-28701': "top: -50%; display: block;",
+        'data-29700': "top: 10%;",
+        'data-34000': "top: 10%;",
+        'data-35000': "top: -20%;",
+        'style': "display: none; top: -50%",
+    },
+    '.alien-container': {
+        'data-29700': "display: none;",
+        'data-29701': "display: block; left: -1000px;",
+        'data-32000': "display: block; left: 0px;",
+        'data-33000': "display: block; left: 0px;",
+        'data-34000': "display: block; left: 2000px;",
+        'data-34001': "display: none;",
+        'style': "display: none; left: -1000px",
+    },
+    // ## ## Car/Spaceship
+    // ## container-inner
+    //
+    '.car-container-inner': {
+        'data-17700': "display: none;",
+        'data-17701': "display: block; left: -100%;",
+        'data-18700': "left: 45%;",
+        'data-19000': "left: 45%;",
+        'data-20000': "left: 14%;",
+        'data-27000': "transform: rotate(0deg);",
+        'data-27695': "transform: rotate(160deg);",
+        'data-27701': "width: 254px;",
+        'data-28700': "width: 100px; opacity: 1;",
+        'data-28900': "opacity: 0; display: block;",
+        'data-28901': "display: none;",
+        'style': "display: none; left: -100%; transform: rotate(0deg); width: 254px; opacity: 1",
+    },
+    // ## ## Living Room
+    '.tv': {
+        'data-36000': "display: none;",
+        'data-36001': "left: -1500px; display: block;",
+        'data-37000': "left: 0px;",
+        'style': "display: none; left: -1500px",
+    },
+    //
+    '.remote-control': {
+        'data-36000': "display: none;",
+        'data-36001': "top: 1500px; display: block;",
+        'data-37000': "top: 540px;",
+        'style': "display: none; top: 1500px",
+    },
+    '.armchair': {
+        'data-36000': "display: none;",
+        'data-36001': "right: -1500px; display: block;",
+        'data-37000': "right: 0px;",
+        'style': "display: none; right: -1500px",
+    },
+    //
+    '.logos': {
+        'data-36000': "display: none;",
+        'data-36001': "bottom: -2500px; display: block;",
+        'data-37000': "bottom: 20px;",
+        'style': "display: none; bottom: -2500px",
+    },
+    '.small-tree': {
+        'data-36000': "display: none;",
+        'data-36001': "left: 2500px; display: block;",
+        'data-37000': "left: 570px;",
+        'style': "display: none; left: 2500px",
+    },
+    //
+    '.coffee-table': {
+        'data-36000': "display: none;",
+        'data-36001': "bottom: -2000px; display: block;",
+        'data-37000': "bottom: 200px;",
+        'style': "display: none; bottom: -2000px",
+    },
+    '.awards-container-bottom': {
+        'data-36500': "display: none;",
+        'data-36501': "display: block; top: 2000px;",
+        'data-37000': "top: 0px;",
+        'style': "display: none; top: 2000px",
+    },
+}
+
+const sm = {
+    // #### BEDROOM
+    // ## sky
+    ".stars": {
+        'style': 'top: 10%; left: 0%;',
+        'data-0': 'top: 10%; left: 0%;',
+    },
+    '.sun': {
+        'style': 'top: 100%; right: 16%;',
+        'data-100': 'top: 100%; right: 60%;',
+        'data-1000': 'top: 20%; right: 16%;',
+    },
+    // ## floor
+    '.desk': {
+        'style': 'top: 2%; left: 2%; display: block;',
+        'data-1700': 'top: 2%; left: 2%; display: block;',
+        'data-2700': 'left: 2%; top: -100%; display: none;',
+    },
+    '.side-table': {
+        'style': 'right: 0%; display: block;',
+        'data-1700': 'right: 0%; display: block;',
+        'data-2700': 'right: 200%; display: none;',
+    },
+    '.rug': {
+        'style': 'top: 0%; left: 0%; display: block;',
+        'data-1800': 'top: 0%; left: 0%; display: block;',
+        'data-2700': 'top: 190%; display: none;',
+    },
+    '.tree': {
+        'style': 'right: 2%; transform: scale(0.6); display: block;',
+        'data-1900': 'right: 2%; transform: scale(0.6); display: block;',
+        'data-2700': 'right: 214%; display: none;',
+    },
+    // ## ## Bathroom
+    // ## wall
+    '.bathroom-light': {
+        'data-2700': "display:none;",
+        'data-2701': "left: -100%; display: block;",
+        'data-3700': "left: 30%;",
+        'data-6200': "left: 30%;",
+        'data-7200': "left: 150%; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.mirror': {
+        'data-6200': "left: 2%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 2%; display: block",
+    },
+    '.mirror-text': {
+        'data-4800': "opacity: 0;",
+        'data-5000': "opacity: 1;",
+        'data-6200': "left: 2%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "opacity: 0; display: block; left: 2%",
+    },
+    '.shelf': {
+        'data-6200': "left: 50%",
+        'data-7200': "left: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 50%; display: block",
+    },
+    '.window': {
+        'data-6300': "left: 70%",
+        'data-7200': "left: 200%; display: block",
+        'data-7201': "display: none;",
+        'style': "left: 70%; display: block",
+    },
+    'clock-face': {
+        'data-6200': "right: 0%",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "right: 0%; display: block",
+    },
+    '.clock-hand': {
+        'data-5500': "transform: rotate(0deg);",
+        'data-6000': "transform: rotate(750deg);",
+        'data-6200': "right: 0%",
+        'data-7200': "right: -100%; display: block",
+        'data-7201': "display: none;",
+        'style': "transform: rotate(0deg); display: block; right: 0%",
+    },
+    //
+    '.bathroom-mat': {
+        'data-6200': "top: 600px",
+        'data-7200': "top: -1000px; display: block",
+        'data-7201': "display: none;",
+        'style': "top: 600px; display: block",
+    },
+    //
+    '.bath': {
+        'data-3700': "display: none;",
+        'data-3701': "top: 1000px; display: block;",
+        'data-3900': "top: 320px;",
+        'data-6200': "top: 320px;",
+        'data-7200': "top: 1000px; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; top: 1000px",
+    },
+    // ## ## Wardrobe
+    // ## wall
+    '.wardrobe': {
+        'data-8700': "display: none",
+        'data-8701': "left: -100%; display: block",
+        'data-9700': "left: 10%;",
+        'data-11700': "left: 10%;",
+        'data-12700': "left: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.wardrobe-rail': {
+        'data-9000': "display: none;",
+        'data-9001': "top: 300%; display: block;",
+        'data-10000': "top: 50%; left: 10%;",
+        'data-11700': "left: 10%;",
+        'data-12700': "left: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; top: 300%; left: 0%",
+    },
+    '.picture-frame': {
+        'data-8700': "display: none;",
+        'data-8701': "right: -100%; display: block;",
+        'data-9700': "right: 5%;",
+        'data-11700': "right: 5%;",
+        'data-12700': "right: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; right: -100%",
+    },
+    '.picture-frame-icons': {
+        'data-10500': "opacity: 0;",
+        'data-10700': "opacity: 1;",
+        'data-11700': "right: 5%;",
+        'data-12700': "right: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "opacity: 0; display: block; right: 5%",
+    },
+    // ## floor
+    '.wardrobe-rug': {
+        'data-8700': "display: none;",
+        'data-8701': "display: block; top: 100%;",
+        'data-9700': "top: 70%;",
+        'data-11700': "top: 70%;",
+        'data-12700': "top: -100%; display: block;",
+        'data-12701': "display: none;",
+        'style': "display: none; top: 100%",
+    },
+    // ## ## Kitchen
+    // ## wall
+    '.kitchen-counter': {
+        'data-13700': "display: none;",
+        'data-13701': "left: -100%; display: block;",
+        'data-14700': "left: 15%;",
+        'data-16700': "left: 15%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.knife-rack': {
+        'data-13700': "display: none;",
+        'data-13701': "top: -100%; display: block;",
+        'data-14700': "top: 20%;",
+        'data-16700': "top: 20%;",
+        'data-17700': "top: 400%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; top: -100%",
+    },
+    '.kitchen-shelf': {
+        'data-13700': "display: none;",
+        'data-13701': "top: -100%; display: block;",
+        'data-14700': "top: 10%;",
+        'data-16700': "top: 10%;",
+        'data-17500': "top: 400%; display: block;",
+        'data-17501': "display: none;",
+        'style': "display: none; top: -100%",
+    },
+    '.chalkboard': {
+        'data-13700': "display: none;",
+        'data-13701': "left: -100%; display: block;",
+        'data-14700': "left: 0%;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    '.chalk-notes': {
+        'data-15300': "opacity: 0;",
+        'data-15500': "opacity: 1;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "opacity: 0; display: block; left: 0%",
+    },
+    // ## floor
+    '.bin': {
+        'data-13700': "display: none;",
+        'data-13701': "top: 100%; left: -100%; display: block;",
+        'data-14700': "top: -10%; left: -5%;",
+        'data-16700': "top: -10%; left: -5%;",
+        'data-17700': "top: -100%; left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; top: 100%; left: -100%",
+    },
+    '.kitchen-rug': {
+        'data-13700': "display: none;",
+        'data-13701': "top: 100%; display: block;",
+        'data-14700': "top: 60%;",
+        'data-16700': "top: 60%;",
+        'data-17700': "top: -100%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; top: 100%",
+    },
+    // ## ## Character
+    //
+    '.bed-frame': {
+        'style': "top: 340px; display: block",
+        'data-1700': "top: 340px; display: block;",
+        'data-2700': "top: 1500px; display: none;",
+    },
+    '.juan-slept': {
+        'style': "display: block",
+        'data-1201': "display: block;",
+        'data-1202': "display: none;",
+    },
+    //
+    '.juan-awake': {
+        'style': "opacity: 0; display: block; top: 35%",
+        'data-1200': "opacity: 0;",
+        'data-1201': "opacity: 1;",
+        'data-2700': "top: 45%;",
+        'data-3700': "top: 45%;",
+        'data-6000': "display: block;",
+        'data-6001': "display: none;",
+    },
+    //
+    '.juan-shower': {
+        'style': "display: none; opacity: 1; left: 72px",
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 72px;",
+        'data-8700': "left: 120px;",
+        'data-11100': "opacity: 1;",
+        'data-11200': "opacity: 0;",
+    },
+    //
+    '.juan-naked': {
+        'style': "display: none; left: 72px; top: 413px; width: 126px; height: 315px",
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 72px;",
+        'data-8700': "left: 120px;",
+        'data-12700': "left: 120px; top: 413px;",
+        'data-13700': "left: 105px; top: 270px;",
+        'data-17701': "width: 126px; height: 315px;",
+        'data-18300': "width: 63px; height: 157px; display: block;",
+        'data-18301': "display: none;",
+    },
+    //
+    '.juan-bubbles': {
+        'style': "display: none; opacity: 1; left: 72px",
+        'data-6000': "display: none;",
+        'data-6001': "display: block;",
+        'data-7700': "left: 72px;",
+        'data-8700': "left: 120px;",
+        'data-11000': "opacity: 1;",
+        'data-11100': "opacity: 0;",
+    },
+    //
+    '.juan-clothes': {
+        'style': "opacity: 0; display: block; left: 120px; top: 413.59px; width: 126px; height: 315px",
+        'data-10500': "opacity: 0;",
+        'data-11200': "opacity: 1;",
+        'data-12700': "left: 120px; top: 413.59px;",
+        'data-13700': "left: 105px; top: 270px;",
+        'data-17701': "width: 126px; height: 315px;",
+        'data-18300': "width: 63px; height: 157px; display: block;",
+        'data-18301': "display: none;",
+    },
+    'juan-nomnom': {
+        'data-15300': "opacity: 0;",
+        'data-15500': "opacity: 1;",
+        'data-16300': "opacity: 1;",
+        'data-16500': "opacity: 0;",
+        'style': "opacity: 0",
+    },
+    //
+    '.bed-sheet': {
+        'data-1700': "left: 8%; display: block;",
+        'data-2700': "left: 200%; display: none;",
+        'style': "left: 8%; display: block;",
+    },
+    //
+    '.bath-top': {
+        'data-3700': "display: none;",
+        'data-3701': "top: 1000px; display: block;",
+        'data-3900': "top: 320px;",
+        'data-6200': "top: 320px;",
+        'data-7200': "top: 1000px; display: block;",
+        'data-7201': "display: none;",
+        'style': "display: none; top: 1000px",
+    },
+    '.table': {
+        'data-13700': "display: none;",
+        'data-13701': "left: -100%; display: block;",
+        'data-14700': "left: 0%;",
+        'data-16700': "left: 0%;",
+        'data-17700': "left: 200%; display: block;",
+        'data-17701': "display: none;",
+        'style': "display: none; left: -100%",
+    },
+    // ## ## Road
+    // ## contents
+    //
+    '.road': {
+        'data-18700': "margin-top: 0px",
+        'data-24700': "margin-top: -2000px",
+        'data-27200': "width: 380px; background-position: -300px 0px;",
+        'data-27700': "width: 0px; background-position: -500px 0px;",
+        'style': "margin-top: 0px; width: 380px; background-position: -300px 0px",
+    },
+    '.roadworks-scroll': {
+        'data-24700': "display: none;",
+        'data-24701': "display: block;",
+        'data-26000': "opacity: 1;",
+        'data-26200': "opacity: 0;",
+        'style': "display: none; opacity: 1",
+    },
+    '.roadworks-sign': {
+        'data-26700': "top: 2060px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2060px",
+    },
+    '.roadworks-sign-text': {
+        'data-26700': "top: 2060px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2060px",
+    },
+    '.traffic-lights': {
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "top: 2200px",
+    },
+    '.traffic-lights-red': {
+        'data-24400': "display: none;",
+        'data-24500': "display: block;",
+        'data-26400': "display: block;",
+        'data-26500': "display: none;",
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "display: none; top: 2200px",
+    },
+    '.traffic-lights-orange': {
+        'data-24300': "display: none;",
+        'data-24350': "display: block;",
+        'data-24400': "display: none;",
+        'data-26500': "display: none;",
+        'data-26550': "display: block;",
+        'data-26600': "display: none;",
+        'data-26700': "top: 2200px;",
+        'data-27200': "top: 1000px;",
+        'style': "display: none; top: 2200px",
+    },
+    '.traffic-lights-green': {
+        'data-24200': "display: block;",
+        'data-24300': "display: none;",
+        'data-26600': "display: none;",
+        'data-26700': "top: 2200px; display: block;",
+        'data-27200': "top: 1000px;",
+        'style': "display: block; top: 2200px",
+    },
+    // ## ## Space
+    // ## container
+    '.spacesuit': {
+        'data-27700': "display: none;",
+        'data-27701': "width: 0px; height: 0px; display: block; right: 300px; top: 300px;",
+        'data-28700': "width: 176px; height: 329px; right: 10px; top: 210px;",
+        'data-34000': "top: 240px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 300px; width: 0px; height: 0px; right: 300px",
+    },
+    '.earth': {
+        'data-28700': "display: none;",
+        'data-28701': "top: 1100px; display: block;",
+        'data-29700': "top: 400px;",
+        'data-34000': "top: 400px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 1100px",
+    },
+    //
+    '.saturn': {
+        'data-28700': "display: none;",
+        'data-28701': "right: -150%; display: block;",
+        'data-29700': "right: 40%;",
+        'data-34000': "top: 720px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 720px; right: -150%",
+    },
+    //
+    '.mercury': {
+        'data-28700': "display: none;",
+        'data-28701': "left: -150%; display: block;",
+        'data-29700': "left: 74%;",
+        'data-34000': "top: 650px;",
+        'data-35000': "top: -400px;",
+        'style': "display: none; top: 650px; left: -150%",
+    },
+    '.venus': {
+        'data-28700': "display: none;",
+        'data-28701': "top: -50%; display: block;",
+        'data-29700': "top: 15%;",
+        'data-34000': "top: 15%;",
+        'data-35000': "top: -20%;",
+        'style': "display: none; top: -50%",
+    },
+    '.alien-container': {
+        'data-29700': "display: none;",
+        'data-29701': "display: block; left: -1000px;",
+        'data-32000': "display: block; left: 0px;",
+        'data-33000': "display: block; left: 0px;",
+        'data-34000': "display: block; left: 2000px;",
+        'data-34001': "display: none;",
+        'style': "display: none; left: -1000px",
+    },
+    // ## ## Car/Spaceship
+    // ## container-inner
+    //
+    '.car-container-inner': {
+        'data-17700': "display: none;",
+        'data-17701': "display: block; left: -40%;",
+        'data-18700': "left: 19%;",
+        'data-19000': "left: 19%;",
+        'data-20000': "left: 0%;",
+        'data-27000': "transform: rotate(0deg) scale(0.6);",
+        'data-27695': "transform: rotate(160deg) scale(0.6);",
+        'data-27701': "width: 254px;",
+        'data-28700': "width: 100px; opacity: 1;",
+        'data-28900': "opacity: 0; display: block;",
+        'data-28901': "display: none;",
+        'style': "display: none; left: -40%; transform: rotate(0deg) scale(0.6); width: 254px; opacity: 1",
+    },
+    // ## ## Living Room
+    '.tv': {
+        'data-36000': "display: none;",
+        'data-36001': "left: -1500px; display: block;",
+        'data-37000': "left: 0px;",
+        'style': "display: none; left: -1500px",
+    },
+    //
+    '.remote-control': {
+        'data-36000': "display: none;",
+        'data-36001': "top: 1500px; display: block;",
+        'data-37000': "top: 360px;",
+        'style': "display: none; top: 1500px",
+    },
+    '.armchair': {
+        'data-36000': "display: none;",
+        'data-36001': "right: -1500px; display: block;",
+        'data-37000': "right: 0px;",
+        'style': "display: none; right: -1500px",
+    },
+    //
+    '.logos': {
+        'data-36000': "display: none;",
+        'data-36001': "bottom: -2500px; display: block;",
+        'data-37000': "bottom: -30px;",
+        'style': "display: none; bottom: -2500px",
+    },
+    '.small-tree': {
+        'data-36000': "display: none;",
+        'data-36001': "left: 2500px; display: block;",
+        'data-37000': "left: 230px;",
+        'style': "display: none; left: 2500px",
+    },
+    //
+    '.coffee-table': {
+        'data-36000': "display: none;",
+        'data-36001': "bottom: -2000px; display: block;",
+        'data-37000': "bottom: 20px;",
+        'style': "display: none; bottom: -2000px",
+    },
+    '.awards-container-bottom': {
+        'data-36500': "display: none;",
+        'data-36501': "display: block; top: 2000px;",
+        'data-37000': "top: -40px;",
+        'style': "display: none; top: 2000px",
+    },
+}
