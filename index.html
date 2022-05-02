@@ -1654,8 +1654,14 @@
           console.log('Reseting Styles : md', { width, prevWindowSize });
           prevWindowSize = width;
           windowType = md;
+        } else if (width < 768 && width > 360 && (prevWindowSize < 360 || prevWindowSize > 768)) {
+          console.log('Reseting Styles : md', { width, prevWindowSize });
+          prevWindowSize = width;
+          windowType = sm;
         } else return;
-        resetStyles();
+
+        console.log('Reloading');
+        location.reload();
       };
 
       const resetStyles = () => {

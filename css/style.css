@@ -1547,12 +1547,15 @@ img.small-tree {
     width: 100%;
   }
 
-  .sky-inner {
-    width: 768px;
-  }
-
+  .sky-inner,
   .floor-inner,
-  .floor-inner-below {
+  .floor-inner-below,
+  .character-container-inner,
+  .kitchen-wall-inner,
+  .car-container,
+  .space-container,
+  .wall-inner,
+  .living-room-container {
     width: 768px;
   }
 
@@ -1594,12 +1597,12 @@ img.small-tree {
 
   img.juan,
   img.juan-awake {
-    top: 35%;
+    top: 44%;
     left: 310px;
   }
 
-  .wall-inner {
-    width: 100%;
+  img.juan-shower {
+    top: 303px;
   }
 
   img.bathroom-sink {
@@ -1609,28 +1612,33 @@ img.small-tree {
 
   img.bath,
   img.bath-top {
-    left: 34%;
+    left: 30%;
   }
 
   img.bathroom-mat {
-    left: 270px;
+    left: 230px;
   }
 
   img.bathroom-chair {
     top: 60%;
   }
 
-  .character-container-inner {
-    width: 768px;
-  }
-
   .shower-curtain {
-    left: 32%;
-    top: 328px;
+    left: 29%;
+    top: 218px;
   }
 
-  .kitchen-wall-inner {
-    width: 768px;
+  img.wardrobe,
+  img.wardrobe-rail {
+    top: 4%;
+    transform: scale(0.8);
+  }
+
+  img.picture-frame,
+  img.picture-frame-icons {
+    right: 0%;
+    top: 21%;
+    transform: scale(0.9);
   }
 
   img.kitchen-counters {
@@ -1680,20 +1688,12 @@ img.small-tree {
     right: 630px;
   }
 
-  .space-container {
-    width: 768px;
-  }
-
   img.saturn {
     top: 900px;
   }
 
   img.mercury {
     top: 650px;
-  }
-
-  .living-room-container {
-    width: 768px;
   }
 
   .tv {
@@ -1726,7 +1726,7 @@ img.small-tree {
   }
 
   img.armchair {
-    top: 468px;
+    top: 160px;
   }
 }
 
@@ -1744,6 +1744,7 @@ img.small-tree {
   .floor-inner-below,
   .character-container-inner,
   .kitchen-wall-inner,
+  .car-container,
   .space-container,
   .wall-inner,
   .living-room-container {
