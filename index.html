@@ -1666,14 +1666,14 @@
 
       const resetStyles = () => {
         for (const className in windowType) {
-          if (Object.hasOwnProperty.call(windowType, className)) {
-            const attributes = windowType[className];
-            for (const attributeType in attributes) {
-              if (Object.hasOwnProperty.call(attributes, attributeType)) {
-                $(className).removeAttr(attributeType);
-              }
-            }
-          }
+          // if (Object.hasOwnProperty.call(windowType, className)) {
+          //   const attributes = windowType[className];
+          //   for (const attributeType in attributes) {
+          //     if (Object.hasOwnProperty.call(attributes, attributeType)) {
+          //       $(className).removeAttr(attributeType);
+          //     }
+          //   }
+          // }
         }
 
         for (const className in windowType) {
@@ -1682,9 +1682,6 @@
             for (const attributeType in attributes) {
               if (Object.hasOwnProperty.call(attributes, attributeType)) {
                 $(className).attr(attributeType, attributes[attributeType]);
-                if (['.desk', '.sun'].includes(className)) {
-                  console.log(className, attributeType, $(className).attr(attributeType));
-                }
               }
             }
           }
@@ -1704,7 +1701,7 @@
         resetStyles();
         // Loading screen
         $(window).load(function () {
-          show();
+          setTimeout(show(), 1500);
         });
 
         function show() {
@@ -1718,8 +1715,6 @@
           scale: 2,
           easing: 'swing',
         });
-
-        console.log(skrollr);
 
         // Video player variables
         var iframe = $('#vimeo-player')[0],

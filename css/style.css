@@ -1785,9 +1785,11 @@ img.small-tree {
   }
 
   .ribbon-message {
-    top: 45%;
-    left: 0%;
-    width: 100%;
+    top: 15%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   img.desk {
