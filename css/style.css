@@ -2027,14 +2027,14 @@ img.small-tree {
   img.small-tree {
     left: 570px;
     top: auto;
-    bottom: 100px;
+    bottom: 0px;
     transform: scale(0.6);
   }
 
   .coffee-table {
     bottom: 200px;
     top: auto;
-    right: -40px;
+    left: 0;
     transform: scale(0.8);
   }
 
