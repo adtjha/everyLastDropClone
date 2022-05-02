@@ -1829,10 +1829,15 @@ img.small-tree {
 
   img.juan,
   img.juan-awake {
-    top: 45%;
-    left: 20%;
+    top: 395px;
+    left: 72px;
     max-height: 260px;
     max-width: 104px;
+  }
+
+  img.juan-shower,
+  img.juan-bubbles {
+    top: 395px;
   }
 
   .bathroom-wall {
@@ -1888,7 +1893,7 @@ img.small-tree {
   }
 
   .shower-curtain {
-    left: -6%;
+    left: -10%;
     top: 312px;
     height: 320px;
   }
@@ -1989,7 +1994,7 @@ img.small-tree {
   .tv {
     top: -50px;
     transform: scale(0.6);
-    left: -100px !important;
+    left: -100px;
   }
 
   .awards-container-bottom {
